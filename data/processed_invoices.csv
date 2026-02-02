@@ -1,0 +1,5 @@
+invoice_id,issue_date,provider,rut_provider,net_amount,tax,total,period,expected_tax,tax_ok,expected_total,total_ok,expected_period,period_ok,error_type
+F001,2024-01-05,Proveedor Servicios Ltda,76.123.456-7,100000.0,19000.0,119000.0,2024-01,19000.0,True,119000.0,True,2024-01,True,OK
+F002,2024-01-10,Comercial Andes SpA,77.987.654-3,200000.0,38000.0,238000.0,2024-01,38000.0,True,238000.0,True,2024-01,True,OK
+F003,2024-01-15,Transportes del Sur Ltda,78.456.123-9,150000.0,30000.0,180000.0,2024-01,28500.0,False,180000.0,True,2024-01,True,IVA incorrecto
+F004,2024-01-20,Suministros Patagonia SpA,76.999.888-1,120000.0,20000.0,140000.0,2024-01,22800.0,False,140000.0,True,2024-01,True,IVA incorrecto

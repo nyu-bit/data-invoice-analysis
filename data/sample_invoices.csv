@@ -1,0 +1,5 @@
+invoice_id,issue_date,provider,rut_provider,net_amount,tax,total,period
+F001,2024-01-05,Proveedor Servicios Ltda,76.123.456-7,100000,19000,119000,2024-01
+F002,2024-01-10,Comercial Andes SpA,77.987.654-3,200000,38000,238000,2024-01
+F003,2024-01-15,Transportes del Sur Ltda,78.456.123-9,150000,30000,180000,2024-01
+F004,2024-01-20,Suministros Patagonia SpA,76.999.888-1,120000,20000,140000,2024-01
