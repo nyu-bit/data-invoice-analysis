@@ -1,41 +1,36 @@
-# Invoice Data Processing for Accounting Support
+# Análisis de Facturas
 
-Este proyecto tiene como objetivo apoyar procesos contables mediante el análisis, limpieza y estructuración de información proveniente de facturas.
+Procesamiento y validación de datos de facturas para apoyo contable.
 
-## Descripción
-El sistema procesa datos de facturas en formato estructurado (CSV), normalizando la información, validando campos clave y generando datos limpios que faciliten el registro contable y la revisión por parte de profesionales del área.
+## Qué hace
 
-El proyecto no reemplaza el trabajo del contador, sino que busca reducir tareas manuales repetitivas y minimizar errores en la gestión de facturas.
+- Limpia y normaliza datos de facturas (CSV)
+- Valida montos, fechas e IVA (19% Chile)
+- Detecta registros inconsistentes
+- Clasifica errores automáticamente usando ML (Decision Tree)
 
-## Tecnologías utilizadas
-- Python
-- Pandas
-- Jupyter Notebook
-- Scikit-learn (Machine Learning)
+## Estructura
 
-## Funcionalidades principales
-- Limpieza y normalización de datos de facturas
-- Validación básica de montos, fechas e impuestos (IVA 19% Chile)
-- Identificación de registros incompletos o inconsistentes
-- Generación de datasets listos para su uso contable
-- **Machine Learning**: Clasificación automática de errores en facturas
+```
+data/           # Datasets de facturas
+models/         # Modelo entrenado (.joblib)
+notebooks/      # Análisis exploratorio
+src/            # Scripts de limpieza
+```
 
-## Machine Learning
-El proyecto incluye un modelo de clasificación (Decision Tree) para detectar automáticamente errores en facturas:
-- Validación de IVA
-- Validación de totales
-- Validación de períodos contables
+## Stack
 
-El modelo entrenado se guarda en `models/invoice_classifier.joblib`.
+Python, Pandas, Scikit-learn, Jupyter
 
-## Enfoque
-Proyecto académico con enfoque en Ingeniería de Datos e IA aplicada como apoyo a procesos empresariales.
+## Uso
 
-## Limitations
-- This project does not replace accounting software.
-- Advanced tax rules are not implemented.
-- Data is simulated for academic purposes.
+```bash
+pip install -r requirements.txt
+jupyter notebook notebooks/analysis.ipynb
+```
 
-## Estado del proyecto
-Completado - Versión 1.0
+## Notas
+
+- Los datos son simulados (proyecto académico)
+- No reemplaza software contable ni reglas fiscales avanzadas
 
